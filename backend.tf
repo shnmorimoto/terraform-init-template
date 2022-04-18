@@ -1,5 +1,7 @@
-backend "s3" {
-  bucket = "<bucket_name>"
-  key    = "<state_name>.state"
-  region = "ap-northeast-1"
+terraform {
+  backend "s3" {
+    bucket = "<bucket_name>"
+    key    = "<name>.state"
+    region = "ap-northeast-1"
+  }
 }
